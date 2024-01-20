@@ -6,77 +6,22 @@
       <!-- this meta update: gives the browser instructins on how to control the page's
       dimensions and scaling -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 <!-- stlye update here: for home page: -->
       <style>
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          margin: 0;
-        }
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+       
         
-        html {
-          box-sizing: border-box;
-        }
-        
-        *, *:before, *:after {
-          box-sizing: inherit;
-        }
-        
-        .column {
-          float: left;
-          width: 33.3%;
-          margin-bottom: 16px;
-          padding: 0 8px;
-        }
-        
-        .card {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          margin: 8px;
-        }
-        
-        .about-section {
-          padding: 50px;
-          text-align: center;
-          background-color: #474e5d;
-          color: white;
-        }
-        
-        .container {
-          padding: 0 16px;
-        }
-        
-        .container::after, .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        
-        .title {
-          color: grey;
-        }
-        
-        .button {
-          border: none;
-          outline: 0;
-          display: inline-block;
-          padding: 8px;
-          color: white;
-          background-color: #000;
-          text-align: center;
-          cursor: pointer;
-          width: 100%;
-        }
-        
-        .button:hover {
-          background-color: #555;
-        }
-        
-        @media screen and (max-width: 650px) {
-          .column {
-            width: 100%;
-            display: block;
-          }
-        }
         </style>
 <!-- end of style update for home page -->
         <title>Cassandra's Portfolio</title>
@@ -88,239 +33,147 @@
       </head>
 <!-- end of head上面 -->
 <body>
+  <BODY BGCOLOR="Olive ">
 
-<!-- updated body and divs: -->
-  <div class="about-section">
-    <h1>Cassandra Meyer's Portfolio Website</h1>
-    <p>Hello and Welcome to my Portoflio Website. I am so happy to have you here. 
-      Currently, I am a student at Wenzao University （文藻大學）
-      in Taiwan. I am studying Chinese for my Master's.
-      I got my Undergrad at University of Cincinnati in Information Technology, Software Development. 
-      Currently, I am looking for a internship for the summer, before
-      I go back to school in Taiwan.
-    </p>Below I have links to pages of websites I have made for clients, as
-  well as forums to attract language learners in the respective lanuages.</p>
-  </div>
-  
-  <h2 style="text-align:center">Our Team</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>jane@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-        <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>mike@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <!-- <img src="assests/img/profilepic.JPG" style="width:100%"> -->
+      <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="clientwork.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>PREVIOUS WORK</p>
+      </a>
+      <a href="languages.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>LANGUAGE FORUMS</p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
       </div>
     </div>
     
-    <div class="column">
-      <div class="card">
-        <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-        <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>john@example.com</p>
-          <p><button class="button">Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div> 
-
-<!-- end of updated body and divs -->
-
-
-
-
-
-
-
-<!-- delete or add back later? -->
-  <!-- <nav id = "burger">
-  </nav>
-  <i class="fa-brands fa-github"></i>
-  <section id = "top_image">
-      <img src="images/bg1.png"/>
-  </section>
-
-  <section id = "description">
-      <article>
-          <header>
-              <h4>DESCRIPTION</h4>
-          </header>
-          <p>
-              XXXXXX<br />
-              XXXXXXXXXXX<br />
-              XXXXXXXX
-          </p>
-          <p>
-              XXXXXXX<br />
-              XXXXXXX<br />
-              cXXXX<br />
-              XXXXXXX
-          </p>
- </article>
-    </section>
-  <div class="hero">
-    <h1><span>Welcome to my Portfolio</span></h1>
-  </div>
-<section class="welcome">
-  <div class="welcome-left">
-    <img src="" alt="">
-  </div>
-  <div class="welcome-middle">
-    <h2>Making it happen</h2>
-    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-      </p>
-  </div>
-  <div class="welcome-right">
-    <img src="" alt="">
-  </div>
-</section>
-
-
-<section class="about-me">
- <img class="about-image" src="" alt="">
-  <h1 class="about-title">Cassandra Portfolio</h1>
-  <h2 class="about-subtitle">Designer and Developer</h2>
-  <div class="about-text">
-   
-    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-      </p>
-      <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Cassandra Meyer.</h1>
+        <p>Web Developer who speaks Chinese, Spanish, and German.</p>
+        <img src="assests/img/profilepic.JPG" alt="boy" class="w3-image" width="496" height="554">
+      </header>
+    
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-  </div>
-</section>
-
-<section class="portfolio">
-  
-    <h1>My Work</h1>
+       
+    
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+        
+       
+          
+       
+        
+        <!-- Testimonials: have my "clients"... chafiq, dad, whoever I made a website for, do a review for me? 
+        can this somehow be linked to google -->
+        <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+        <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+        <p>John Doe saved us from a web disaster.</p><br>
+        
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than John Doe.</p>
+      <!-- End About Section -->
+      </div>
+      
+      <!-- Portfolio Section -->
+      <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">My Photos</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+            <img src="/w3images/wedding.jpg" style="width:100%">
+            <img src="/w3images/rocks.jpg" style="width:100%">
+            <img src="/w3images/sailboat.jpg" style="width:100%">
+          </div>
+    
+          <div class="w3-half">
+            <img src="/w3images/underwater.jpg" style="width:100%">
+            <img src="/w3images/chef.jpg" style="width:100%">
+            <img src="/w3images/wedding.jpg" style="width:100%">
+            <img src="/w3images/p6.jpg" style="width:100%">
+          </div>
+        <!-- End photo grid -->
+        </div>
+      <!-- End Portfolio Section -->
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content " id="contact">
+        <h2 class="w3-text-black">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1-513-519-6390</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>
+            <a href="mailto:cassiemeyer65@gmail.com">Email: cassiemeyer65@gmail.com</a> </p>
+        </div><br>
+        <p>Let's get in touch. Send me a message:</p>
+    
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      <!-- End Contact Section -->
+      </div>
+      
+        <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+      </footer>
+    
+    <!-- END PAGE CONTENT -->
+    </div>
     
 
-
- -->
-
-
-
-<!-- 
- /*styled on the style.css
- used for slying the slider container thingy  */ -->
-<!-- <div class="slide-container"> </div>
-  <div class="slide-content"></div>
-  <div class="slide-wrapper"></div>
-  <div class="image-content"></div>
-  <span class="overlay"></span>
-  <div class="card-image"></div>
-  <img src="img/imageholder.png" alt="" class="card-img">
-
-
-
-
-
-
-
-
-
-    <div class="portfolio-items">
-      <!--Portfolio Item 1-->
-<!-- <figure class="portfolio-item featured">
-  <img src="assests/img/imageholder.png" alt="">
-<figcaption>
- <h2 class="portfolio-title">Project Name</h2>
- <p class="portfolio-desc">A short description here add later</p>
- <a href="#" class="portfolio-link">More info</a>
-</figcaption>
-</figure> -->
-
-   <!--Portfolio Item 2-->
-   <!-- <figure class="portfolio-item">
-    <img src="assests/img/imageholder.png" alt="">
-    <figcaption>
-     <h2 class="portfolio-title">Project Name</h2>
-     <p class="portfolio-desc">A short description here add later</p>
-     <a href="#" class="portfolio-link">More info</a>
-    </figcaption>
-    </figure> -->
-
-       <!--Portfolio Item 3-->
-<!-- <figure class="portfolio-item">
-  <img src="assests/img/imageholder.png" alt="">
-  <figcaption>
-   <h2 class="portfolio-title">Project Name</h2>
-   <p class="portfolio-desc">A short description here add later</p>
-   <a href="#" class="portfolio-link">More info</a>
-  </figcaption>
-  </figure> -->
-
-     <!--Portfolio Item 4-->
-<!-- <figure class="portfolio-item">
-  <img src="assests/img/imageholder.png" alt="">
-  <figcaption>
-   <h2 class="portfolio-title">Project Name</h2>
-   <p class="portfolio-desc">A short description here add later</p>
-   <a href="#" class="portfolio-link">More info</a>
-  </figcaption>
-  </figure> -->
-
-     <!--Portfolio Item 5-->
-<!-- <figure class="portfolio-item">
-  <img src="assests/img/imageholder.png" alt="">
-  <figcaption>
-   <h2 class="portfolio-title">Project Name</h2>
-   <p class="portfolio-desc">A short description here add later</p>
-   <a href="#" class="portfolio-link">More info</a>
-  </figcaption>
-  </figure>
-    
- 
-</div>
-</section>
-<section class="contact">
-
-  <h1>Contact me</h1>
-  <form action="">
-
-    <label class="name">Name:<input type="text" id="name"></label>
-    <label class="email">Email:<input type="email"></label>
-
-  </form>
-
-</section> --> -->
-<!-- end of this "add back later maybe" -->
 
 
 </body>
