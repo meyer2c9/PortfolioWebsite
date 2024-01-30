@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLient Work Display</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <style>
+               body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+          }
+          
+          html {
+            box-sizing: border-box;
+          }
+          
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+          
+          .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+          }
+          
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+          }
+          
+          .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+          }
+          
+          .container {
+            padding: 0 16px;
+          }
+          
+          .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          
+          .title {
+            color: grey;
+          }
+          
+          .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          .button:hover {
+            background-color: #555;
+          }
+          
+          @media screen and (max-width: 650px) {
+            .column {
+              width: 100%;
+              display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- updated body and divs: -->
+
+    <BODY BGCOLOR="Olive ">
+
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+          <!-- Avatar image in top left corner -->
+          <!-- <img src="assests/img/profilepic.JPG" style="width:100%"> -->
+          <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+          </a>
+          <a href="clientwork.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>PREVIOUS WORK</p>
+          </a>
+          <a href="languages.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>LANGUAGE FORUMS</p>
+          </a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+          </a>
+        </nav>
+        
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+          <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+          </div>
+        </div>
+        
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+          <!-- Header/Home -->
+          <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">Previous</span> Work.</h1>
+           
+        
+        
+  
+  <h2 style="text-align:center">Explore some previous websites I have compiled.</h2>
+
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+     <c> <i class="fa-solid fa-address-card"></i></c> 
+    <c>   <i class="fa-solid fa-user-tie"></i></c> 
+        <div class="container">
+          <h2>圍棋網站</h2>
+          <p class="title">Youth Weiqi Club based out of Bochum, DE.</p>
+          <p>Contact me with a consultaion, make a paragraph discription.
+            put something here or don't put something here, not really sure yet...
+          </p>
+          <p>Do I put my email here, put something else, or 
+            don't put anything at all/
+          </p>
+         <p><button class="button"><a href="https://www.linkedin.com/in/cassandra-meyer-b25ba61b7/" 
+          target="_blank">View Website</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+        <div class="column">
+          <div class="card">
+         <c> <i class="fa-solid fa-address-card"></i></c> 
+        <c>   <i class="fa-solid fa-user-tie"></i></c> 
+            <div class="container">
+              <h2>Lacrose para ninas</h2>
+              <p class="title">Freelance Wesites I made in the past.</p>
+              <p>Contact me with a consultaion</p>
+              <p>cassiemeyer65@gmail.com</p>
+              <p><button class="button"><a href="https://www.linkedin.com/in/cassandra-meyer-b25ba61b7/" 
+                target="_blank">View Website</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <div class="card">
+             <c> <i class="fa-solid fa-address-card"></i></c> 
+            <c>   <i class="fa-solid fa-user-tie"></i></c> 
+                <div class="container">
+                  <h2>Discusion Forums</h2>
+                  <p class="title">Freeland Wesites I made in the past.</p>
+                  <p>Contact me with a consultaion</p>
+                  <p>cassiemeyer65@gmail.com</p>
+                  <p><button class="button"><a href="https://www.linkedin.com/in/cassandra-meyer-b25ba61b7/" 
+                    target="_blank">View Website</button></p>
+                </div>
+              </div>
+            </div>
+</header>
+<!-- end of updated body and divs -->
+
+
+
+
+
+
+
+<!-- delete or add back later? -->
+  <!-- <nav id = "burger">
+  </nav>
+  <i class="fa-brands fa-github"></i>
+  <section id = "top_image">
+      <img src="images/bg1.png"/>
+  </section>
+
+  <section id = "description">
+      <article>
+          <header>
+              <h4>DESCRIPTION</h4>
+          </header>
+          <p>
+              XXXXXX<br />
+              XXXXXXXXXXX<br />
+              XXXXXXXX
+          </p>
+          <p>
+              XXXXXXX<br />
+              XXXXXXX<br />
+              cXXXX<br />
+              XXXXXXX
+          </p>
+ </article>
+    </section>
+  <div class="hero">
+    <h1><span>Welcome to my Portfolio</span></h1>
+  </div>
+<section class="welcome">
+  <div class="welcome-left">
+    <img src="" alt="">
+  </div>
+  <div class="welcome-middle">
+    <h2>Making it happen</h2>
+    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+      </p>
+  </div>
+  <div class="welcome-right">
+    <img src="" alt="">
+  </div>
+</section>
+
+
+<section class="about-me">
+ <img class="about-image" src="" alt="">
+  <h1 class="about-title">Cassandra Portfolio</h1>
+  <h2 class="about-subtitle">Designer and Developer</h2>
+  <div class="about-text">
+   
+    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+      </p>
+      <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+        </p>
+  </div>
+</section>
+
+<section class="portfolio">
+  
+    <h1>My Work</h1>
+    
+
+
+ -->
+
+
+
+<!-- 
+ /*styled on the style.css
+ used for slying the slider container thingy  */ -->
+<!-- <div class="slide-container"> </div>
+  <div class="slide-content"></div>
+  <div class="slide-wrapper"></div>
+  <div class="image-content"></div>
+  <span class="overlay"></span>
+  <div class="card-image"></div>
+  <img src="img/imageholder.png" alt="" class="card-img">
+
+
+
+
+
+
+
+
+
+    <div class="portfolio-items">
+      <!--Portfolio Item 1-->
+<!-- <figure class="portfolio-item featured">
+  <img src="assests/img/imageholder.png" alt="">
+<figcaption>
+ <h2 class="portfolio-title">Project Name</h2>
+ <p class="portfolio-desc">A short description here add later</p>
+ <a href="#" class="portfolio-link">More info</a>
+</figcaption>
+</figure> -->
+
+   <!--Portfolio Item 2-->
+   <!-- <figure class="portfolio-item">
+    <img src="assests/img/imageholder.png" alt="">
+    <figcaption>
+     <h2 class="portfolio-title">Project Name</h2>
+     <p class="portfolio-desc">A short description here add later</p>
+     <a href="#" class="portfolio-link">More info</a>
+    </figcaption>
+    </figure> -->
+
+       <!--Portfolio Item 3-->
+<!-- <figure class="portfolio-item">
+  <img src="assests/img/imageholder.png" alt="">
+  <figcaption>
+   <h2 class="portfolio-title">Project Name</h2>
+   <p class="portfolio-desc">A short description here add later</p>
+   <a href="#" class="portfolio-link">More info</a>
+  </figcaption>
+  </figure> -->
+
+     <!--Portfolio Item 4-->
+<!-- <figure class="portfolio-item">
+  <img src="assests/img/imageholder.png" alt="">
+  <figcaption>
+   <h2 class="portfolio-title">Project Name</h2>
+   <p class="portfolio-desc">A short description here add later</p>
+   <a href="#" class="portfolio-link">More info</a>
+  </figcaption>
+  </figure> -->
+
+     <!--Portfolio Item 5-->
+<!-- <figure class="portfolio-item">
+  <img src="assests/img/imageholder.png" alt="">
+  <figcaption>
+   <h2 class="portfolio-title">Project Name</h2>
+   <p class="portfolio-desc">A short description here add later</p>
+   <a href="#" class="portfolio-link">More info</a>
+  </figcaption>
+  </figure>
+    
+ 
+</div>
+</section>
+<section class="contact">
+
+  <h1>Contact me</h1>
+  <form action="">
+
+    <label class="name">Name:<input type="text" id="name"></label>
+    <label class="email">Email:<input type="email"></label>
+
+  </form>
+
+</section> --> -->
+<!-- end of this "add back later maybe" -->
+</body>
+</html>
